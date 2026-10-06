@@ -10,8 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
       - name: checkout code
         uses: actions/checkout@v4
 
       - name: print a welcome message
         run: echo "welcome to our first github Action workflow"
+=======
+      - name: print a welcome message
+        run: echo "welcome to our first github Action workflow"
+
+      - name: checkout repo
+        uses: actions/checkout@v6.1.0
+
+      - name: list repo files
+        run: ls -la
+      
+>>>>>>> 9f7596f7aa55d5f778cecbd07b01106fb500c347
