@@ -1,0 +1,9 @@
+on:
+  workflow_dispatch: 
+
+jobs:
+  deploy:
+    runs-on: ubunto-latest
+    steps:
+      - name: deploy application 
+        run: echo "deploying the application "
