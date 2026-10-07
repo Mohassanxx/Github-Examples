@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch: 
+    inputs:
+      environment:
+        description: "choose the env"
+        required: true
+        default: "staging "
+        type: choice
+        options:
+          - staging 
+          - production
+jobs:
+  deploy:
+    runs-on: ubunto-latest
+    steps:
+      - name: deploy application 
+        run: echo "deploying the application to s{{inputs.environment}} "
