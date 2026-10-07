@@ -14,4 +14,4 @@ jobs:
     runs-on: ubunto-latest
     steps:
       - name: deploy application 
-        run: echo "deploying the application "
+        run: echo "deploying the application to s{{inputs.environment}} "
